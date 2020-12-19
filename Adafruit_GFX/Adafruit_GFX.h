@@ -46,7 +46,7 @@ static inline void swap(int16_t &a, int16_t &b)
  * hardware based on application control.
  *
  */
-class Adafruit_GFX : public Stream
+class Adafruit_GFX 
 {
  public:
     Adafruit_GFX(int16_t w, int16_t h)
