@@ -21,6 +21,7 @@ All text above must be included in any redistribution
 #define _ADAFRUIT_GFX_H_
 
 #include "Adafruit_GFX_Config.h"
+#include "platform/include/platform/Stream.h"
 
 static inline void swap(int16_t &a, int16_t &b)
 {
@@ -46,7 +47,7 @@ static inline void swap(int16_t &a, int16_t &b)
  * hardware based on application control.
  *
  */
-class Adafruit_GFX 
+class Adafruit_GFX : public Stream
 {
  public:
     Adafruit_GFX(int16_t w, int16_t h)
