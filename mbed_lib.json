@@ -1,0 +1,290 @@
+{
+    "name": "iotkit",
+    "config": {
+        "led1": {
+            "value": "LED1",
+            "help": "LED 1 - 4"
+        }, 
+        "led2": {
+            "value": "LED2"
+        }, 
+        "led3": {
+            "value": "LED3"
+        }, 
+        "led4": {
+            "value": "LED4"
+        },                         
+        "oled-rst": {
+            "value": "D9",
+            "help": "OLED Display"
+        },
+        "oled-sda": {
+            "value": "D14"
+        },
+        "oled-scl": {
+            "value": "D15"
+        },
+        "i2c-sda": {
+            "value": "D14",
+            "help": "I2C Bus wo die Sensoren angeschlossen sind."
+        },
+        "i2c-scl": {
+            "value": "D15"
+        },
+        "rfid-mosi": {
+            "value": "D11",
+            "help": "NFC RFID Reader"
+        },
+        "rfid-miso": {
+            "value": "D12"
+        },
+        "rfid-sclk": {
+            "value": "D13"
+        },
+        "rfid-ss": {
+            "value": "D10"
+        },
+        "rfid-rst": {
+            "value": "D8"
+        },
+        "led-spi-mosi": {
+            "value": "D11",
+            "help": "RGB LED Strip am SPI 1 Bus"
+        },
+        "led-spi-sclk": {
+            "value": "D13"
+        },
+        "dotled-mosi": {
+            "value": "D11",
+            "help": "DotLED Matrix am SPI 2 Bus"
+        },
+        "dotled-miso": {
+            "value": "D12"
+        },
+        "dotled-sclk": {
+            "value": "D13"
+        },
+        "dotled-ss": {
+            "value": "D10"
+        },
+        "hall-sensor": {
+            "value": "A3",
+            "help": "Einfacher Hallsensor am GPIO Pin angesprochen mittels AnalogIn"
+        },
+        "button1": {
+            "value": "BUTTON1",
+            "help": "User Button 1"
+        },
+        "button2": {
+            "value": "BUTTON2",
+            "help": "linker Kontakt am Encoder"
+        },
+        "button3": {
+            "value": "BUTTON3",
+            "help": "rechter Kontakt am Encoder"
+        },
+        "buzzer": {
+            "value": "D3",
+            "help": "Summer an D12. Doppelbelegung mit LED3, sw4 auf ON schalten"
+        },
+        "servo1": {
+            "value": "D6",
+            "help": "Servo 1, oranges Kabel an S(ignal)"
+        },
+        "servo2": {
+            "value": "D9",
+            "help": "Servo 2, oranges Kabel an S(ignal)"
+        },
+        "servo3": {
+            "value": "D10",
+            "help": "Servo 3, oranges Kabel an S(ignal)"
+        },
+        "servo4": {
+            "value": "D11",
+            "help": "Servo 4, oranges Kabel an S(ignal)"
+        },
+        "motor1-pwm": {
+            "value": "D3",
+            "help": "Motor 1 an Anschluss m01"
+        },
+        "motor1-fwd": {
+            "value": "D2"
+        },
+        "motor1-rev": {
+            "value": "D4"
+        },
+        "motor2-pwm": {
+            "value": "D5",
+            "help": "Motor 2 an Anschluss m02"
+        },
+        "motor2-fwd": {
+            "value": "D6"
+        },
+        "motor2-rev": {
+            "value": "D7"
+        },
+        "stepper1-1": {
+            "value": "D3",
+            "help": "Schrittmotor 1 an Stepper 1"
+        },
+        "stepper1-2": {
+            "value": "D5"
+        },
+        "stepper1-3": {
+            "value": "D6"
+        },
+        "stepper1-4": {
+            "value": "D9"
+        }, 
+        "stepper2-1": {
+            "value": "D2",
+            "help": "Schrittmotor 2 an Stepper 2"
+        },
+        "stepper2-2": {
+            "value": "D4"
+        },
+        "stepper2-3": {
+            "value": "D7"
+        },
+        "stepper2-4": {
+            "value": "D8"
+        },
+        "mosfet1": {
+            "value": "D3",
+            "help": "MOSFET fuer Anschluss RBG LED Strip oder Tueroeffner"
+        },
+        "mosfet2": {
+            "value": "D5",
+            "help": "MOSFET fuer Anschluss RBG LED Strip"
+        },
+        "mosfet3": {
+            "value": "D6",
+            "help": "MOSFET fuer Anschluss RBG LED Strip"
+        },
+        "esp8266-rx": {
+            "value": "D0",
+            "help": "UART BUS Receive mit ESP8266"
+        },
+        "esp8266-tx": {
+            "value": "D1",
+            "help": "UART Bus Transmit mit ESP8266"
+        },     
+        "esp8266-rst": {
+            "value": "D9",
+            "help": "Reset ESP8266"
+        },             
+        "grove-i2c-sda": {
+            "value": "D14",
+            "help": "I2C Bus mit Grove Buchse"
+        },
+        "grove-i2c-scl": {
+            "value": "D15",
+            "help": "I2C Bus mit Grove Buchse"
+        },
+        "grove-uart-rx": {
+            "value": "D0",
+            "help": "UART BUS Receive mit Grove Buchse"
+        },
+        "grove-uart-tx": {
+            "value": "D1",
+            "help": "UART Bus Transmit mit Grove Buchse"
+        }, 
+        "grove1-1": {
+            "value": "A4",
+            "help": "AnalogIn mit Grove Buchse 1"
+        },
+        "grove1-2": {
+            "value": "A5",
+            "help": "AnalogIn mit Grove Buchse 1"
+        },    
+        "grove2-1": {
+            "value": "A1",
+            "help": "Digital In/Out mit Grove Buchse 2"
+        },
+        "grove2-2": {
+            "value": "A0",
+            "help": "Digital In/Out mit Grove Buchse 2"
+        },
+        "grove3-1": {
+            "value": "D10",
+            "help": "Digital In/Out mit Grove Buchse 3"
+        },
+        "grove3-2": {
+            "value": "D9",
+            "help": "Digital In/Out mit Grove Buchse 3"
+        }                         
+    },
+    "target_overrides": {
+        "K64F": {
+            "led1": "D10",
+            "led2": "D11",
+            "led3": "D12",
+            "led4": "D13",
+            "i2c-sda": "PTE0",
+            "i2c-scl": "PTE1",
+            "oled-rst": "PTE26",
+            "oled-sda": "PTE0", 
+            "oled-scl": "PTE1",
+            "rfid-mosi": "PTA16",
+            "rfid-miso": "PTC7",
+            "rfid-sclk": "PTC5",
+            "rfid-ss": "D10",
+            "rfid-rst": "D8",
+            "led-spi-mosi": "PTD6",
+            "led-spi-sclk": "PTD5",
+            "dotled-mosi": "PTD6",
+            "dotled-miso": "PTD7",
+            "dotled-sclk": "PTD5",
+            "dotled-ss": "PTE6",
+            "hall-sensor": "PTC0",
+            "button1": "PTC13",
+            "button2": "PTC6",
+            "button3": "PTA4",
+            "buzzer": "D12",
+            "servo1": "D9",
+            "servo2": "D10",
+            "servo3": "D11",
+            "servo4": "D12",
+            "stepper1-1": "PTB0",
+            "stepper1-2": "PTB1",
+            "stepper1-3": "PTB21",
+            "stepper1-4": "PTB20",
+            "stepper2-1": "PTC9",
+            "stepper2-2": "PTC8",
+            "stepper2-3": "PTB19",
+            "stepper2-4": "PTB18",
+            "mosfet1": "D5",
+            "mosfet2": "D6",
+            "mosfet3": "D7",
+            "esp8266-rx": "PTC14",
+            "esp8266-tx": "PTC15",
+            "esp8266-rst": "D9",
+            "grove-i2c-sda": "PTE25",
+            "grove-i2c-scl": "PTE24",
+            "grove-uart-rx": "PTE5",
+            "grove-uart-tx": "PTE4",
+            "grove1-1": "A4",
+            "grove1-2": "A5",
+            "grove2-1": "D2",
+            "grove2-2": "D3",
+            "grove3-1": "D5",
+            "grove3-2": "D6"
+        },
+        "DISCO_L475VG_IOT01A": {
+            "i2c-sda": "PB_11",
+            "i2c-scl": "PB_10"
+        },
+        "NUCLEO_F411RE": {
+            "esp8266-rx": "D2",
+            "esp8266-tx": "D10"
+        },
+        "NUCLEO_F303RE": {
+            "esp8266-rx": "D2",
+            "esp8266-tx": "D10",
+            "servo1": "D8",
+            "servo2": "D9",
+            "servo3": "A4",
+            "servo4": "A5"
+        }                                     
+    }
+}
