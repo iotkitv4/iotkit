@@ -49,11 +49,11 @@ void Adafruit_SSD1306::begin(uint8_t vccstate)
 {
     rst = 1;
     // VDD (3.3V) goes high at start, lets just chill for a ms
-    wait_ms(1);
+    thread_sleep_for(1);
     // bring reset low
     rst = 0;
     // wait 10ms
-    wait_ms(10);
+    thread_sleep_for(10);
     // bring out of reset
     rst = 1;
     // turn on VCC (9V?)
