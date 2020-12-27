@@ -1,6 +1,18 @@
 {
     "name": "iotkit",
     "config": {
+        "esp8266-rx": {
+            "value": "D0",
+            "help": "UART BUS Receive mit ESP8266"
+        },
+        "esp8266-tx": {
+            "value": "D1",
+            "help": "UART Bus Transmit mit ESP8266"
+        },     
+        "esp8266-rst": {
+            "value": "D9",
+            "help": "Reset ESP8266"
+        },    
         "led1": {
             "value": "LED1",
             "help": "LED 1 - 4"
