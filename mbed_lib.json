@@ -161,18 +161,6 @@
             "value": "D6",
             "help": "MOSFET fuer Anschluss RBG LED Strip"
         },
-        "esp8266-rx": {
-            "value": "D0",
-            "help": "UART BUS Receive mit ESP8266"
-        },
-        "esp8266-tx": {
-            "value": "D1",
-            "help": "UART Bus Transmit mit ESP8266"
-        },     
-        "esp8266-rst": {
-            "value": "D9",
-            "help": "Reset ESP8266"
-        },             
         "grove-i2c-sda": {
             "value": "D14",
             "help": "I2C Bus mit Grove Buchse"
@@ -212,7 +200,13 @@
         "grove3-2": {
             "value": "D9",
             "help": "Digital In/Out mit Grove Buchse 3"
-        }                         
+        },
+        "hts221-sensor": {
+            "value": true
+        },
+        "bmp180-sensor": {
+            "value": false
+        }
     },
     "target_overrides": {
         "K64F": {
@@ -256,9 +250,6 @@
             "mosfet1": "D5",
             "mosfet2": "D6",
             "mosfet3": "D7",
-            "esp8266-rx": "PTC14",
-            "esp8266-tx": "PTC15",
-            "esp8266-rst": "D9",
             "grove-i2c-sda": "PTE25",
             "grove-i2c-scl": "PTE24",
             "grove-uart-rx": "PTE5",
@@ -274,17 +265,29 @@
             "i2c-sda": "PB_11",
             "i2c-scl": "PB_10"
         },
-        "NUCLEO_F411RE": {
-            "esp8266-rx": "D2",
-            "esp8266-tx": "D10"
-        },
-        "NUCLEO_F303RE": {
-            "esp8266-rx": "D2",
-            "esp8266-tx": "D10",
+        "NUCLEO_F746ZG": {
             "servo1": "D8",
             "servo2": "D9",
             "servo3": "A4",
-            "servo4": "A5"
+            "servo4": "A5",
+            "hts221-sensor": false,
+            "bmp180-sensor": true
+        },   
+        "NUCLEO_F429ZI": {
+            "servo1": "D8",
+            "servo2": "D9",
+            "servo3": "A4",
+            "servo4": "A5",
+            "hts221-sensor": false,
+            "bmp180-sensor": true                        
+        },             
+        "NUCLEO_F303RE": {
+            "servo1": "D8",
+            "servo2": "D9",
+            "servo3": "A4",
+            "servo4": "A5",
+            "hts221-sensor": false,
+            "bmp180-sensor": true            
         }                                     
     }
 }
