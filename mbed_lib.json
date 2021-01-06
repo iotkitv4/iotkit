@@ -88,7 +88,7 @@
             "help": "Summer an D12. Doppelbelegung mit LED3, sw4 auf ON schalten"
         },
         "servo1": {
-            "value": "D8",
+            "value": "D3",
             "help": "Servo 1, oranges Kabel an S(ignal)"
         },
         "servo2": {
@@ -96,11 +96,11 @@
             "help": "Servo 2, oranges Kabel an S(ignal)"
         },
         "servo3": {
-            "value": "A4",
+            "value": "D10",
             "help": "Servo 3, oranges Kabel an S(ignal)"
         },
         "servo4": {
-            "value": "A5",
+            "value": "D11",
             "help": "Servo 4, oranges Kabel an S(ignal)"
         },
         "motor1-pwm": {
