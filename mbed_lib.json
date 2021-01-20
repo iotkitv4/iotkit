@@ -84,8 +84,8 @@
             "help": "rechter Kontakt am Encoder"
         },
         "buzzer": {
-            "value": "D3",
-            "help": "Summer an D12. Doppelbelegung mit LED3, sw4 auf ON schalten"
+            "value": "D12",
+            "help": "Summer an D12. IoTKitV3 K64F: Doppelbelegung mit LED3, sw4 auf ON schalten"
         },
         "servo1": {
             "value": "D3",
