@@ -272,7 +272,11 @@
         "NUCLEO_F429ZI": {
             "hts221-sensor": false,
             "bmp180-sensor": true                        
-        },             
+        },   
+        "DISCO_F769NI": {
+            "hts221-sensor": false,
+            "bmp180-sensor": true            
+        },                  
         "NUCLEO_F303RE": {
             "hts221-sensor": false,
             "bmp180-sensor": true            
