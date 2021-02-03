@@ -8,7 +8,7 @@ Der Internet der Dinge Kit V3 besteht aus mehreren Boards, die mit den Beispiele
 Es sind das 
 * [IoTKitV3 K64F](#iotkitv3-k64f) - das eigens für das IoTKit entwickelte Board, basierend auf einen [NXP FRDM-K64F Board](https://os.mbed.com/platforms/FRDM-K64F/). 
 * [DISCO-L475VG-IOT01A](#DISCO-L475VG-IOT01A) Board 
-* [NUCLEO-F303RE](#NUCLEO-F303RE) Board 
+* [NUCLEO-F429ZI](#NUCLEO-F429ZI) Board 
 
 Die letzten zwei Board werden durch einen, für das IoTKitV3 entwickelten, Shield ergänzt. Dieser enthält neben einem OLED Display einen Hall Sensor und Treiber für Motoren.
 
@@ -23,7 +23,7 @@ Daneben sollten alle [mbed Boards](https://os.mbed.com/platforms/?q=&Mbed+OS+sup
 
 > [⇧ **Nach oben**](#)
 
-![](https://raw.githubusercontent.com/iotkitv3/intro/main/images/IoTKit.png)
+![](https://raw.githubusercontent.com/iotkitv3/intro/main/images/K64F.png)
 
 Internet der Dinge Board
 
@@ -79,7 +79,7 @@ Entstanden ist das Board durch die Kombination des [NXP FRDM-K64F Board](https:/
 
 > [⇧ **Nach oben**](#)
 
-Der Internet der Dinge Kit V3 Disco besteht aus den nachfolgenden Komponenten.
+Der Internet der Dinge Kit V3 Disco besteht aus den nachfolgenden Komponenten und wird mit dem [IoTKit Shield](#shield) ergänzt.
 
 ### Board DISCO-L475VG-IOT01A
 
@@ -113,52 +113,32 @@ Internet der Dinge Disco L475VG Board
 * Arduino™ Uno V3
 * PMOD
 
-## NUCLEO-F303RE
+## NUCLEO-F429ZI
 ***
 
-![](https://raw.githubusercontent.com/iotkitv3/intro/main/images/F303RE.png)
+![](https://raw.githubusercontent.com/iotkitv3/intro/main/images/NUCLEO-F429ZI.png)
 
-Internet der Dinge Board Nucleo F303 RE
+Internet der Dinge Board NUCLEO-F429ZI
 - - -
 
-Das STM32 Nucleo-Board bietet Anwendern eine erschwingliche und flexible Möglichkeit, neue Ideen auszuprobieren und Prototypen zu bauen.
+Das NUCLEO-F429ZI Board bietet Anwendern eine erschwingliche und flexible Möglichkeit, neue Ideen auszuprobieren und Prototypen zu bauen.
+
+Es wird mit dem [IoTKit Shield](#shield) ergänzt.
 
 #### Board features
 
-STM32F303RET6 in LQFP64 package
-ARM®32-bit Cortex®-M4 CPU, 72 MHz max CPU frequency
-512 KB Flash, 80 KB SRAM
-GPIO (51) with external interrupt capability, 12-bit ADC (4), 12-bit DAC (2)
-RTC, Timers (10)
-I2C (3), USART (5), SPI (4), USB 2.0 full-speed, CAN
+* STM32F429ZIT6 in LQFP144 package
+* ARM®32-bit Cortex®-M4 CPU with FPU
+* 180 MHz max CPU frequency
+* VDD from 1.8 V to 3.6 V
+* 2048 KB Flash
+* 256+4 KB SRAM, including 64 KB of CCM (core couple memory) data RAM
+* GPIOs (114) with external interrupt capability
+* I2C (3), USART (4), SPI (6), USB 2.0 full-speed, CAN, Ethernet
 
-* [mbed Page](https://os.mbed.com/platforms/ST-Nucleo-F303RE/)
+* [mbed Page](https://os.mbed.com/platforms/ST-Nucleo-F429ZI/)
 
 ## Shield
-***
-
-![](https://raw.githubusercontent.com/iotkitv3/intro/main/images/Shield.png)
-
-Internet der Dinge Shield 
-
-- - -
-
-Der IoTKit V3 Shield ist ein Arduino Header kompatibler Shield.
-
-Shield features
-* 1 x SPI Header
-* 1 x NFC/RFID Reader Header
-* 2 x UART Header (1x Grove)
-* 4 x Servo 4x3 Header
-* 2 x I2C Header (1x Grove)
-* 1 x Leistungsstufe für Schrittmotoren, Türöffner oder für die Ansteuerung von LED Streifen
-* 1 x Hall Sensor
-* 1 x OLED (128x64 Pixel)
-* 1 x H-Bridge für 2 DC Motoren
-* 8 x Analog/Digital 6x3 Header und 2 x Grove
-* 1 x Buzzer
-
-## Shield (small)
 
 ![](https://raw.githubusercontent.com/iotkitv3/intro/main/images/ShieldSmall.png)
 
@@ -169,17 +149,17 @@ Internet der Dinge Shield (small)
 Der IoTKit V3 Shield (small) ist die abgespeckte Variante des IoTKit Shields. 
 
 Shield features
-* 1 x SPI Header
-* 1 x NFC/RFID Reader Header
-* 1 x I2C Header (Grove)
-* 1 x SD Card Header
-* 1 x Hall Sensor
+* 1 x [SPI](https://github.com/iotkitv3/spi) Header
+* 1 x [NFC/RFID Reader](https://github.com/iotkitv3/rfid) Header
+* 1 x [I2C](https://github.com/iotkitv3/i2c) Header (Grove)
+* 1 x SD Card Header 
+* 1 x [Hall Sensor](https://github.com/iotkitv3/sensors#hall-sensor)
 * 1 x OLED (128x64 Pixel)
-* 1 x H-Bridge für 2 DC Motoren
-* 4 x Analog/Digital 6x3 Header z.B. für Sensoren und Servos
-* 1 x Grove
-* 1 x Anschluss für BMP180 Sensor für die Messung von Luftdruck und Temperatur.
-* 1 x Anschluss für APDS-9930 ein Umgebungslicht (ALS) und Näherungssensor
+* 1 x [H-Bridge für 2 DC Motoren](https://github.com/iotkitv3/actors#Gleichstrom-Motor)
+* 4 x Analog/Digital 4x3 Header z.B. für externe Sensoren und [Servos](https://github.com/iotkitv3/actors#servo)
+* 2 x Stecker für das [Grove System](https://wiki.seeedstudio.com/Grove_System/)
+* 1 x [BMP180](https://github.com/iotkitv3/i2c#bmp180) Sensor für die Messung von Luftdruck und Temperatur.
+* 1 x [APDS-9960](https://github.com/iotkitv3/i2c#apds-9960) ein RGB- und Gestensensor, der Umgebungslicht- und Farbmessung, Näherungserkennung und berührungslose Gestenerkennung bietet.
 
 ## Zubehör
 ***
