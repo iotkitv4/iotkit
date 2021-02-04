@@ -10,7 +10,7 @@ Es sind das
 * [DISCO-L475VG-IOT01A](#DISCO-L475VG-IOT01A) Board 
 * [NUCLEO-F429ZI](#NUCLEO-F429ZI) Board 
 
-Die letzten zwei Board werden durch einen, für das IoTKitV3 entwickelten, Shield ergänzt. Dieser enthält neben einem OLED Display einen Hall Sensor und Treiber für Motoren.
+Die letzten zwei Board werden durch einen, für das IoTKitV3 entwickelten, [Shield](#shield) ergänzt. Dieser enthält neben einem OLED Display einen Hall Sensor und Treiber für Motoren.
 
 Zusätzlich liegen dem IoTKitV3 externe [Komponenten](#zubehör) wie Motoren, LED Streifen, Sensoren etc. bei.
 
@@ -148,18 +148,21 @@ Internet der Dinge Shield (small)
 
 Der IoTKit V3 Shield (small) ist die abgespeckte Variante des IoTKit Shields. 
 
-Shield features
-* 1 x [SPI](https://github.com/iotkitv3/spi) Header
-* 1 x [NFC/RFID Reader](https://github.com/iotkitv3/rfid) Header
-* 1 x [I2C](https://github.com/iotkitv3/i2c) Header (Grove)
-* 1 x SD Card Header 
-* 1 x [Hall Sensor](https://github.com/iotkitv3/sensors#hall-sensor)
-* 1 x OLED (128x64 Pixel)
-* 1 x [H-Bridge für 2 DC Motoren](https://github.com/iotkitv3/actors#Gleichstrom-Motor)
+Shield features (von links nach rechts)
+* 1 x Potenziometer (drehbarer Widerstand)
 * 4 x Analog/Digital 4x3 Header z.B. für externe Sensoren und [Servos](https://github.com/iotkitv3/actors#servo)
+* 1 x [Hall Sensor](https://github.com/iotkitv3/sensors#hall-sensor)
+* 1 x [NFC/RFID Reader](https://github.com/iotkitv3/rfid) Header
+
+* 1 x [H-Bridge für 2 DC Motoren](https://github.com/iotkitv3/actors#Gleichstrom-Motor)
+* 1 x ESP 8266 Header inkl. Steckbrücken zur Umschaltung der RX/TX Pins (siehe Unterseite)
 * 2 x Stecker für das [Grove System](https://wiki.seeedstudio.com/Grove_System/)
-* 1 x [BMP180](https://github.com/iotkitv3/i2c#bmp180) Sensor für die Messung von Luftdruck und Temperatur.
-* 1 x [APDS-9960](https://github.com/iotkitv3/i2c#apds-9960) ein RGB- und Gestensensor, der Umgebungslicht- und Farbmessung, Näherungserkennung und berührungslose Gestenerkennung bietet.
+* 1 x [SPI](https://github.com/iotkitv3/spi) Header
+
+* 1 x [APDS-9960](https://github.com/iotkitv3/i2c#apds-9960) (PROXY) ein RGB- und Gestensensor, der Umgebungslicht- und Farbmessung, Näherungserkennung und berührungslose Gestenerkennung bietet.
+* 1 x OLED (128x64 Pixel)
+* 1 x [BMP180](https://github.com/iotkitv3/i2c#bmp180) (TEMP) Sensor für die Messung von Luftdruck und Temperatur. 
+* 1 x SD Card Header 
 
 ## Zubehör
 ***
