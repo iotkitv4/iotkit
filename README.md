@@ -29,14 +29,16 @@ Internet der Dinge Board
 
 - - -
 
-Der IoTKit ist ein [NXP FRDM-K64F Board](https://os.mbed.com/platforms/FRDM-K64F/) kompatibles Board.
+Das IoTKitV3 K64F ist ein [NXP FRDM-K64F Board](https://os.mbed.com/platforms/FRDM-K64F/) kompatibles Board.
  
 Entstanden ist das Board durch die Kombination des [NXP FRDM-K64F Board](https://os.mbed.com/platforms/FRDM-K64F/) und einzelner Shields (z.B. Erweiterungsshield, Motorshield etc.). Dadurch sind Pin&#039;s doppelt belegt. Überall wo dies der Fall ist, kann immer nur eine Funktion gleichzeitig genutzt werden. Beispiel ist ein Gleichstrom Motor, am 2\. Anschluss angeschlossen, kann nicht gleichzeitig die MOSFET Verstärkerschaltung genutzt werden, weil sich diese die Pin&#039;s D5 - D7 teilen
 
-* [Schaltplan](IoTKitV3.pdf) 
+**ACHTUNG**: kann der IoTKitV3 K64F nicht mehr Programmiert werden, Upload endet sofort und es erscheint eine Datei FAIL.TXT, ist leicht am Encoder zu drehen und das Board ein- und auszustecken.
+
 
 #### Board features
 
+* [Schaltplan](IoTKitV3.pdf) 
 * [Bluetooth® V4.1 module (SPBTLE-RF)](https://github.com/iotkitv3/bluetooth/)
 * [Proximity sensor, gesture and ambient light sensing (ALS) module (VL6180X)](https://github.com/iotkitv3/i2c#vl6180x)
 * [low power, high sensitivity, RED, GREEN and BLUE color light sensor (RGB)](https://github.com/iotkitv3/i2c#ISL29125)
