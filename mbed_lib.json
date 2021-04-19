@@ -271,8 +271,29 @@
         },   
         "NUCLEO_F429ZI": {
             "hts221-sensor": false,
-            "bmp180-sensor": true                        
-        },   
+            "bmp180-sensor": true,
+            "stepper1-1": "PC_8",
+            "stepper1-2": "PC_9",
+            "stepper1-3": "PC_10",
+            "stepper1-4": "PC_11",
+            "stepper2-1": "PC_12",
+            "stepper2-2": "PD_2",
+            "stepper2-3": "PG_2",
+            "stepper2-4": "PG_3",  
+            "led-spi-mosi": "PE_6",
+            "led-spi-sclk": "PE_2",
+            "dotled-mosi": "PE_6",
+            "dotled-miso": "PE_5",
+            "dotled-sclk": "PE_2",
+            "dotled-ss": "PE_4",            
+            "rfid-mosi": "PE_6",
+            "rfid-miso": "PE_5",
+            "rfid-sclk": "PE_2",
+            "rfid-ss": "PD_5",
+            "rfid-rst": "PD_6",
+            "mosfet1": "PC_8",
+            "mosfet2": "PC_12"
+        },    
         "DISCO_F769NI": {
             "hts221-sensor": false,
             "bmp180-sensor": true            
