@@ -9,8 +9,8 @@ Es sind das
 * [IoTKitV3 K64F](#iotkitv3-k64f) - das eigens für das IoTKit entwickelte Board, basierend auf einen [NXP FRDM-K64F Board](https://os.mbed.com/platforms/FRDM-K64F/). 
 * [DISCO-L475VG-IOT01A](#DISCO-L475VG-IOT01A) Board 
 * [NUCLEO-F429ZI](#NUCLEO-F429ZI) Board 
-* [IoTKitV3 Shield (small)](#IoTKit V3 Shield (small))
-* [IoTKitV3 Shield F429ZI)](#IoTKit V3 Shield (F429ZI))
+* [IoTKitV3 Shield (small)](#iotkit-v3-shield-small)
+* [IoTKitV3 Shield F429ZI)](#iotkit-v3-shield-f429zi)
 
 Die letzten zwei Board werden durch einen, für das IoTKitV3 entwickelten, [Shield](#shield) ergänzt. Dieser enthält neben einem OLED Display einen Hall Sensor und Treiber für Motoren.
 
