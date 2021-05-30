@@ -9,6 +9,8 @@ Es sind das
 * [IoTKitV3 K64F](#iotkitv3-k64f) - das eigens für das IoTKit entwickelte Board, basierend auf einen [NXP FRDM-K64F Board](https://os.mbed.com/platforms/FRDM-K64F/). 
 * [DISCO-L475VG-IOT01A](#DISCO-L475VG-IOT01A) Board 
 * [NUCLEO-F429ZI](#NUCLEO-F429ZI) Board 
+* [IoTKitV3 Shield (small)](#IoTKit V3 Shield (small))
+* [IoTKitV3 Shield F429ZI)](#IoTKit V3 Shield (F429ZI))
 
 Die letzten zwei Board werden durch einen, für das IoTKitV3 entwickelten, [Shield](#shield) ergänzt. Dieser enthält neben einem OLED Display einen Hall Sensor und Treiber für Motoren.
 
@@ -140,7 +142,9 @@ Es wird mit dem [IoTKit Shield](#shield) ergänzt.
 
 * [mbed Page](https://os.mbed.com/platforms/ST-Nucleo-F429ZI/)
 
-## Shield
+## Shields
+
+### IoTKit V3 Shield (small)
 
 ![](https://raw.githubusercontent.com/iotkitv3/intro/main/images/ShieldSmall.png)
 
@@ -150,7 +154,8 @@ Internet der Dinge Shield (small)
 
 Der IoTKit V3 Shield (small) ist die abgespeckte Variante des IoTKit Shields. 
 
-Shield features (von links nach rechts)
+**Shield features (von links nach rechts)**
+
 * 1 x Potenziometer (drehbarer Widerstand)
 * 4 x Analog/Digital 4x3 Header z.B. für externe Sensoren und [Servos](https://github.com/iotkitv3/actors#servo)
 * 1 x [Hall Sensor](https://github.com/iotkitv3/sensors#hall-sensor)
@@ -165,6 +170,41 @@ Shield features (von links nach rechts)
 * 1 x OLED (128x64 Pixel)
 * 1 x [BMP180](https://github.com/iotkitv3/i2c#bmp180) (TEMP) Sensor für die Messung von Luftdruck und Temperatur. 
 * 1 x SD Card Header 
+
+
+
+* [Schaltplan](IoTKitV3-Shield.pdf)
+
+### IoTKit V3 Shield (F429ZI)
+
+![](https://raw.githubusercontent.com/iotkitv3/intro/main/images/ShieldF429ZI.png)
+
+- - -
+
+IoTKit V3 Shield (F429ZI) ist ein speziell für das NUCLEO-F429ZI Board angepasster Shield. Durch zu zusätzlichen Pins des NUCLEO-F429ZI Boards hat es wieder genügend Anschlüsse für einen Schrittmotor Treiber und einen Summer.
+
+**Shield features (von links nach rechts)**
+
+* 1 x Summer
+* 1 x [ESP 8266 WLAN Modem](https://github.com/iotkitv3/wlan/)
+* 1 x [Hall Sensor](https://github.com/iotkitv3/sensors#hall-sensor)
+
+* 1 x [Schrittmotor Driver](https://github.com/iotkitv3/actors#Schrittmotor)
+* 6 x 3 Anschlüsse Analog/Digital Header z.B. für externe Sensoren und [Servos](https://github.com/iotkitv3/actors#servo)
+* 1 x [NFC/RFID Reader](https://github.com/iotkitv3/rfid) Header
+
+* 1 x [H-Bridge für 2 DC Motoren](https://github.com/iotkitv3/actors#Gleichstrom-Motor)
+* 2 x Stecker für das [Grove System](https://wiki.seeedstudio.com/Grove_System/)
+* 1 x [SPI](https://github.com/iotkitv3/spi) Header
+* Anschluss für SD Card
+ 
+* [APDS-9960](https://github.com/iotkitv3/i2c#apds-9960) (PROXY) ein RGB- und Gestensensor, der Umgebungslicht- und Farbmessung, Näherungserkennung und berührungslose Gestenerkennung bietet.
+* OLED  
+* [BMP180](https://github.com/iotkitv3/i2c#bmp180) (TEMP) Sensor für die Messung von Luftdruck und Temperatur. 
+
+
+
+* [Schaltplan](IoTKitV3-Shield-F429ZI.pdf)
 
 ## Zubehör
 ***
