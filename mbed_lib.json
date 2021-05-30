@@ -296,7 +296,8 @@
             "servo1": "D9",
             "servo2": "D10",
             "servo3": "D11",
-            "servo4": "D12"           
+            "servo4": "D12",
+            "buzzer": "D13"
         },   
         "DISCO_F769NI": {
             "hts221-sensor": false,
